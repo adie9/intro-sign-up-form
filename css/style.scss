@@ -107,6 +107,11 @@ body {
 }
 
 @media screen and (min-width: 950px) {
+    body {
+        background: url("/images/bg-intro-desktop.png");
+        background-color: $primary-red;
+    }
+    
     .container {
         display: grid;
         grid-template-columns: 50% 50%;
