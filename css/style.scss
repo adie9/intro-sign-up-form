@@ -33,10 +33,20 @@ body {
     margin: 50px 30px;
 }
 
+#main-heading {
+    padding-bottom: 20px;
+}
+
+#main-text {
+    margin-bottom: 20px;
+}
+
 .try-it {
     @include round-box-theme( $bg-color: $accent-blue);
 
     padding: 20px 30px;
+
+    margin-bottom: 30px;
 
     p {
         font-weight: 400;
@@ -50,6 +60,20 @@ body {
 
 .form-container {
     @include round-box-theme();
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        row-gap: 20px;
+
+        input {
+            @include round-box-theme($text-color: $neutral-grayish-blue);
+
+            border-color: $neutral-grayish-blue;
+            padding: 15px;
+        }
+    }
 }
 
 .claim {
@@ -60,6 +84,7 @@ body {
 
 .tos {
     color: $neutral-grayish-blue;
+    font-size: 0.8em;
 
 
     span {
@@ -74,6 +99,7 @@ body {
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    margin: 20px auto;
 }
     
 .attribution a { 

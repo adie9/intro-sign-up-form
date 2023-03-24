@@ -13,11 +13,20 @@ body {
   margin: 50px 30px;
 }
 
+#main-heading {
+  padding-bottom: 20px;
+}
+
+#main-text {
+  margin-bottom: 20px;
+}
+
 .try-it {
   color: white;
   background-color: hsl(248, 32%, 49%);
   border-radius: 10px;
   padding: 20px 30px;
+  margin-bottom: 30px;
 }
 .try-it p {
   font-weight: 400;
@@ -32,6 +41,19 @@ body {
   background-color: white;
   border-radius: 10px;
 }
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 20px;
+}
+.form-container form input {
+  color: hsl(246, 25%, 77%);
+  background-color: white;
+  border-radius: 10px;
+  border-color: hsl(246, 25%, 77%);
+  padding: 15px;
+}
 
 .claim {
   color: white;
@@ -42,6 +64,7 @@ body {
 
 .tos {
   color: hsl(246, 25%, 77%);
+  font-size: 0.8em;
 }
 .tos span {
   color: hsl(0, 100%, 74%);
@@ -50,6 +73,7 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 20px auto;
 }
 
 .attribution a {
