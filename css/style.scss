@@ -11,7 +11,7 @@ $neutral-dark-blue: hsl(249, 10%, 26%);
 $neutral-grayish-blue: hsl(246, 25%, 77%);
 
 // Mixins
-@mixin round-box-theme($text-color, $bg-color){
+@mixin round-box-theme($text-color: white, $bg-color: white){
     color: $text-color;
     background-color: $bg-color;
     border-radius: 10px;
@@ -29,11 +29,12 @@ body {
     text-align: center;
     font-size: $body-fs;
     background-color: $primary-red;
-    color: white
+    color: white;
+    margin: 50px 30px;
 }
 
 .try-it {
-    @include round-box-theme($neutral-grayish-blue, $accent-blue);
+    @include round-box-theme( $bg-color: $accent-blue);
 
     padding: 20px 30px;
 
@@ -41,18 +42,18 @@ body {
         font-weight: 400;
 
         span {
-            color: white;
+            color: $neutral-grayish-blue;
             font-weight: 600;
         }
     }
 }
 
 .form-container {
-    @include round-box-theme(white, white);
+    @include round-box-theme();
 }
 
 .claim {
-    @include round-box-theme(white, $primary-green);
+    @include round-box-theme($bg-color: $primary-green);
 
     padding: 20px 20px;
 }
@@ -62,7 +63,7 @@ body {
 
 
     span {
-
+        color: $primary-red;
     }
 }
 

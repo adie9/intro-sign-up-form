@@ -10,10 +10,11 @@ body {
   font-size: 16px;
   background-color: hsl(0, 100%, 74%);
   color: white;
+  margin: 50px 30px;
 }
 
 .try-it {
-  color: hsl(246, 25%, 77%);
+  color: white;
   background-color: hsl(248, 32%, 49%);
   border-radius: 10px;
   padding: 20px 30px;
@@ -22,7 +23,7 @@ body {
   font-weight: 400;
 }
 .try-it p span {
-  color: white;
+  color: hsl(246, 25%, 77%);
   font-weight: 600;
 }
 
@@ -42,6 +43,10 @@ body {
 .tos {
   color: hsl(246, 25%, 77%);
 }
+.tos span {
+  color: hsl(0, 100%, 74%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
