@@ -1,0 +1,80 @@
+// Font Size
+$body-fs: 16px;
+
+// Colors
+$primary-red: hsl(0, 100%, 74%);
+$primary-green: hsl(154, 59%, 51%);
+
+$accent-blue: hsl(248, 32%, 49%);
+
+$neutral-dark-blue: hsl(249, 10%, 26%);
+$neutral-grayish-blue: hsl(246, 25%, 77%);
+
+// Mixins
+@mixin round-box-theme($text-color, $bg-color){
+    color: $text-color;
+    background-color: $bg-color;
+    border-radius: 10px;
+}
+
+// Mobile-first content
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("../images/bg-intro-mobile.png");
+    text-align: center;
+    font-size: $body-fs;
+    background-color: $primary-red;
+    color: white
+}
+
+.try-it {
+    @include round-box-theme($neutral-grayish-blue, $accent-blue);
+
+    padding: 20px 30px;
+
+    p {
+        font-weight: 400;
+
+        span {
+            color: white;
+            font-weight: 600;
+        }
+    }
+}
+
+.form-container {
+    @include round-box-theme(white, white);
+}
+
+.claim {
+    @include round-box-theme(white, $primary-green);
+
+    padding: 20px 20px;
+}
+
+.tos {
+    color: $neutral-grayish-blue;
+
+
+    span {
+
+    }
+}
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
