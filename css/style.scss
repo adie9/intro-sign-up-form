@@ -33,6 +33,11 @@ body {
     margin: 50px 30px;
 }
 
+.container {
+    max-width: 390px;
+    margin: 0 auto;
+}
+
 #main-heading {
     padding-bottom: 20px;
 }
@@ -92,11 +97,6 @@ body {
     }
 }
 
-
-
-
-
-
 .attribution { 
     font-size: 11px; text-align: center; 
     margin: 20px auto;
@@ -104,4 +104,33 @@ body {
     
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 950px) {
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 'heading form';
+        max-width: 1084px;
+        column-gap: 20px;
+    }
+
+    .heading-section {
+        grid-area: heading;
+        align-self: center;
+        text-align: left;
+        
+        #main-heading {
+            font-size: 3em;
+            line-height: 40pt;
+        }
+    }
+
+    .form-section {
+        grid-area: form;
+    }
+
+    .tos {
+        margin-bottom: 20px;
+    }
 }
