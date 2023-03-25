@@ -30,6 +30,7 @@ body {
   color: white;
   background-color: hsl(248, 32%, 49%);
   border-radius: 10px;
+  box-shadow: 0px 10px #ce6f6c;
   padding: 20px 30px;
   margin-bottom: 30px;
 }
@@ -45,6 +46,7 @@ body {
   color: white;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0px 10px #ce6f6c;
 }
 .form-container form {
   display: flex;
@@ -75,6 +77,10 @@ body {
 }
 .tos span {
   color: hsl(0, 100%, 74%);
+}
+
+.border-red {
+  border-color: hsl(0, 100%, 74%);
 }
 
 .attribution {
