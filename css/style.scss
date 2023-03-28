@@ -97,8 +97,12 @@ i {
         }
 
         input:invalid {
-            border-color: $neutral-grayish-blue;
+            border-color: $primary-red;
             
+        }
+
+        input:placeholder-shown {
+            border-color: $neutral-grayish-blue;
         }
 
         

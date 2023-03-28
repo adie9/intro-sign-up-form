@@ -69,6 +69,12 @@ i {
   border-color: hsl(154, 59%, 51%);
 }
 .form-container form input:invalid {
+  border-color: hsl(0, 100%, 74%);
+}
+.form-container form input:-moz-placeholder-shown {
+  border-color: hsl(246, 25%, 77%);
+}
+.form-container form input:placeholder-shown {
   border-color: hsl(246, 25%, 77%);
 }
 
