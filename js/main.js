@@ -3,7 +3,14 @@ $(document).ready(function() {
         $("form input").each(function() {
             let input = $(this);
             if (!input.val()) {
-                alert("Type " + input.attr("type") + "Name " + input.attr("name"));
+                // Change border color to red and remove placeholder text
+                input.css("border-color", "red").attr("placeholder", "");
+
+                // Add img element 
+                
+
+                
+
             }
             
         })

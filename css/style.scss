@@ -85,9 +85,12 @@ body {
             border-color: $neutral-grayish-blue;
             padding: 15px;
             color: black;
+            width: 40px;
         }
+        
     }
 }
+
 
 .claim {
     @include round-box-theme($bg-color: $primary-green);
