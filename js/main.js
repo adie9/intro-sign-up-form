@@ -11,12 +11,20 @@ $(document).ready(function() {
                 "background":"url(../images/icon-error.svg)",
                 "background-repeat":"no-repeat",
                 "background-position":"95% 50%"});
-                input.attr("placeholder", name + " cannot be empty.");
+                
+                if (input.attr("type") == "email") {
+                    input.attr("placeholder", "Please enter a valid email.");
+                } else {
+                    input.attr("placeholder", "This field cannot be empty.");
+                }
+               
 
             }
 
             
         })
+
+        
     })
     
 });
