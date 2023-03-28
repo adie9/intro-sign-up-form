@@ -13,6 +13,10 @@ body {
   margin: 50px 30px;
 }
 
+i {
+  color: hsl(246, 25%, 77%);
+}
+
 .container {
   max-width: 390px;
   margin: 0 auto;
@@ -58,9 +62,14 @@ body {
   color: hsl(246, 25%, 77%);
   background-color: white;
   border-radius: 10px;
-  border-color: hsl(246, 25%, 77%);
   padding: 15px;
   color: black;
+}
+.form-container form input:valid {
+  border-color: hsl(154, 59%, 51%);
+}
+.form-container form input:invalid {
+  border-color: hsl(246, 25%, 77%);
 }
 
 .claim {
@@ -77,10 +86,6 @@ body {
 }
 .tos span {
   color: hsl(0, 100%, 74%);
-}
-
-.border-red {
-  border-color: hsl(0, 100%, 74%);
 }
 
 .attribution {

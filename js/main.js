@@ -3,13 +3,11 @@ $(document).ready(function() {
         $("form input").each(function() {
             let input = $(this);
             if (!input.val()) {
-                // Change border color to red and remove placeholder text
-                input.css("border-color", "red").attr("placeholder", "");
-
-                // Add img element 
-                
-
-                
+                $("input:invalid").css({"border-color":"red", 
+                "background":"url(../images/icon-error.svg)",
+                "background-repeat":"no-repeat",
+                "background-position":"95% 50%"});
+                input.attr("placeholder", "");
 
             }
             

@@ -37,6 +37,11 @@ body {
     margin: 50px 30px;
 }
 
+i {
+    color: $neutral-grayish-blue;
+}
+
+
 .container {
     max-width: 390px;
     margin: 0 auto;
@@ -82,11 +87,21 @@ body {
         input {
             @include round-box-theme($text-color: $neutral-grayish-blue);
 
-            border-color: $neutral-grayish-blue;
             padding: 15px;
             color: black;
-            width: 40px;
+        
         }
+
+        input:valid {
+            border-color: $primary-green;
+        }
+
+        input:invalid {
+            border-color: $neutral-grayish-blue;
+            
+        }
+
+        
         
     }
 }
@@ -108,9 +123,7 @@ body {
     }
 }
 
-.border-red {
-    border-color: $primary-red;
-}
+
 
 .attribution { 
     font-size: 11px; text-align: center; 
