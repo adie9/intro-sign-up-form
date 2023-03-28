@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/intro-sign-up-form-using-html-css-scss-js-jquery-8ZyPnJAFvZ](https://www.frontendmentor.io/solutions/intro-sign-up-form-using-html-css-scss-js-jquery-8ZyPnJAFvZ)
+- Live Site URL: [https://intro-sign-up-form.vercel.app/](https://intro-sign-up-form.vercel.app/)
 
 ## My process
 
