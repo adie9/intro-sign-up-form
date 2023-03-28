@@ -11,9 +11,10 @@ $(document).ready(function() {
                 "background":"url(../images/icon-error.svg)",
                 "background-repeat":"no-repeat",
                 "background-position":"95% 50%"});
-                input.attr("placeholder", "");
+                input.attr("placeholder", name + " cannot be empty.");
 
             }
+
             
         })
     })
